@@ -138,7 +138,7 @@ console.log(media)
 // Il software deve chiedere per 5 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 // Esegui questo programma in due versioni, con il for e con il while.
-
+/*
 let somma = 0;
 let arrNumeri = [];
 
@@ -153,3 +153,21 @@ for (i = 0; i < arrNumeri.length; i++) {
 }
 
 console.log("la somma dei numeri è: " + somma)
+*/
+
+
+/////////////////////////////////////////////////////////////////////
+// Snack 2.2
+// Inserisci un numero, se è pari stampa il numero,
+// se è dispari stampa il numero successivo
+
+let numero = parseInt(prompt("inserisci un numero"));
+let uno = parseInt(1);
+
+if (numero % 2 == 0){
+    console.log(numero)
+}
+
+if (numero % 2 == 1){
+    console.log(numero + uno)
+}
