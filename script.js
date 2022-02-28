@@ -138,7 +138,9 @@ console.log(media)
 // Il software deve chiedere per 5 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 // Esegui questo programma in due versioni, con il for e con il while.
+
 /*
+    // FOR
 let somma = 0;
 let arrNumeri = [];
 
@@ -154,6 +156,16 @@ for (i = 0; i < arrNumeri.length; i++) {
 
 console.log("la somma dei numeri è: " + somma)
 */
+
+    // WHILE (TOFIX)
+
+// let somma = 0;
+// let arrNumeri = [];
+// while(i < 5){
+//     somma +=  parseInt(prompt("Inserisci un numero: "));
+//     i++;
+// }
+// console.log("la somma dei numeri è: " + somma);
 
 
 /////////////////////////////////////////////////////////////////////
@@ -179,6 +191,11 @@ if (numero % 2 == 1){
 // Snack 2.3
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 
+// /*
+
+let randomNome;
+let randomCognome;
+
 let arrNomi = [
     'Gennaro',
     'Fabrizio',
@@ -187,21 +204,22 @@ let arrNomi = [
     'Donatella',
     'Jacopo'
  ];
- let randomNome = Math.floor(Math.random()*arrNomi.length);
- 
-//  console.log(arrNomi[randomNome]);
 
  let arrCognomi = [
-    'Rossi',
-    'Bruno' ,
-    'Conti' ,
-    'Lollobrigida' ,
-    'Visconti' ,
-    'Pignatti' 
- ];
- let randomCognomi = Math.floor(Math.random()*arrCognomi.length);
- 
-//  console.log(arrCognomi[randomCognomi]);
+     'Rossi',
+     'Bruno' ,
+     'Conti' ,
+     'Lollobrigida' ,
+     'Visconti' ,
+     'Pignatti' 
+    ];
+    
+    for (let i = 0; i < 3; i++) {
+        randomNome = Math.floor(Math.random()*arrNomi.length);
+        randomCognome = Math.floor(Math.random()*arrCognomi.length);
 
- let invitato = (arrNomi[randomNome]) + ' ' + (arrCognomi[randomCognomi])
- console.log(invitato)
+        let invitati = (arrNomi[randomNome]) + ' ' + (arrCognomi[randomCognome])
+        console.log(invitati)
+ }
+ 
+//  */
