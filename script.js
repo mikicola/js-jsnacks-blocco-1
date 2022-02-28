@@ -116,6 +116,23 @@ console.log(numDispari)
 
 
 /////////////////////////////////////////////////////////////////////
+// Snack 6
+// Chiedi un numero di 4 cifre all’utente
+// e calcola la somma di tutte le cifre che compongono il numero.
+
+/*
+const numeroQuattroCifre = prompt("dammi un numero di quattro cifre");
+// numeroQuattroCifre = numeroQuattroCifre.toString().length;
+let somma = 0;
+
+for(let i = 0; i < numeroQuattroCifre.length; i++){
+    somma += parseInt(numeroQuattroCifre[i]);
+}
+console.log(somma)
+*/
+
+
+/////////////////////////////////////////////////////////////////////
 // Snack 1.9
 // calcola somma e media dei primi 10 numeri
 
@@ -157,15 +174,17 @@ for (i = 0; i < arrNumeri.length; i++) {
 console.log("la somma dei numeri è: " + somma)
 */
 
-    // WHILE (TOFIX)
+/*
+    // WHILE
+let somma = 0;
+i=0;
+while(i < 5){
+    somma +=  parseInt(prompt("Inserisci un numero: "));
+    i++;
+}
+console.log("la somma dei numeri è: " + somma);
+*/
 
-// let somma = 0;
-// let arrNumeri = [];
-// while(i < 5){
-//     somma +=  parseInt(prompt("Inserisci un numero: "));
-//     i++;
-// }
-// console.log("la somma dei numeri è: " + somma);
 
 
 /////////////////////////////////////////////////////////////////////
@@ -191,7 +210,7 @@ if (numero % 2 == 1){
 // Snack 2.3
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 
-// /*
+/*
 
 let randomNome;
 let randomCognome;
@@ -222,4 +241,4 @@ let arrNomi = [
         console.log(invitati)
  }
  
-//  */
+ */
